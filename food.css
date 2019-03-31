@@ -1,0 +1,373 @@
+/***
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+****/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3{
+    font-weight: 200;
+    text-transform: uppercase;
+}
+h1{
+    font-size: 52px;
+    color: #fff;
+    line-height: 1.2em;
+}
+h2{
+    font-size: 36px;
+    text-align: center;
+}
+h3{
+    font-size: 26px;
+    padding: 10px 0;
+}
+.col{
+    display: block;
+    float: left;
+}
+.row{
+    max-width: 1140px;
+    margin:0 auto;
+    display:flow-root;
+}
+.row-1-of-4{
+    width: 23%;
+    padding: 1%;
+}
+
+.row-1-of-3{
+    width: 30%;
+    padding: 1%;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+cite{
+    display: block;
+    padding-top: 20px;
+}
+textarea{
+    width: 900px;
+    height: 100px;
+    resize: none;
+    font-size: 18px;
+}
+
+select {
+    font-size: 18px;
+    width: 46%;
+    padding: 10px;
+}
+
+.hide{
+    display: none;
+}
+
+/*** 共用區 ***/
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/header-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav .row{
+    padding: 20px
+}
+.logo {
+    display: inline-block;
+    background-image: url(img/food-logo.png);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+.main-nav{
+    float: right;
+}
+.main-nav li{
+    display: inline-block;
+    line-height: 104px;
+    margin-left: 40px;
+}
+.main-nav li a{
+    padding: 8px 0;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.main-nav li a:hover{
+    border-bottom: 2px #FFD05B solid;
+}
+
+.caption-content{
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+}
+
+h2:after{
+    content: " ";
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    width: 100px;
+    margin: 30px auto ;
+    
+}
+.long-copy{
+    font-size: 17.5px;
+    line-height: 1.4em;
+    width: 70%;
+    margin: 25px auto; 
+}
+
+.shortcut-btn{
+    padding-top: 20px; 
+}
+
+.payment-btn{
+    margin-right: 20px;
+    padding: 10px 25px;
+    border-radius: 25px;
+    background: #e67e22;
+    color: #fff;
+    font-size: 18px; 
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.main-content-btn{
+    padding: 10px 25px;
+    border-radius: 25px;
+    background: none;
+    color: #e67e22;
+    font-size: 18px; 
+    outline: none;
+    border: 1px #e67e22 solid;
+    cursor: pointer;
+    transition: .5s ;
+}
+
+.main-content-btn:hover{
+    background-color: #e67e22;
+    color: #fff;
+}
+
+section{
+    padding: 80px 0;
+}
+
+.section-features i{
+    color: #e67e22;
+    font-size: 20px;
+}
+.meal-showcase{
+    display: flow-root;
+}
+
+.meal-showcase li{
+    float: left;
+    width: 25%;
+    height: 300px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-showcase img:hover{
+    opacity: 1;
+    transform: scale(1.06);
+}
+
+.meal-showcase img{
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    transform: scale(1.15);
+    transition: 0.5s;
+    position: relative;
+}
+
+.section-cities img{
+    width: 100%;
+    height: 214px;
+}
+
+.city-feature a{
+    font-size: 18px;
+    color: #e67e22;
+    border-bottom: 1px #e67e22 solid;
+    font-weight: bold;
+}
+
+.city-feature p{
+    font-size: 18px;
+    display: inline-block;
+    padding-left: 10px; 
+}
+
+.section-testmonials{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/testmonials-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+}
+.section-testmonials img{
+    width: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.section-plans{
+    background-color: #F4F4F4;
+}
+
+.box{
+    background-color: #fff;
+    margin: 7px;
+}
+.section-plans i{
+    color: #e67e22;
+}
+.detail-price .price{
+    font-size: 400%;
+    color: #e67e22;
+}
+.detail-price span{
+    font-size: 16px;
+}
+.plans-detail{
+    padding-top: 20px;
+    font-size: 20px;
+}
+.plans-btn {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.plans-btn a{
+    background-color: none;
+    border: 2px #e67e22 solid;
+    border-radius: 200px;
+    padding: 10px 25px;
+    color: #e67e22;
+    font-weight: bold;
+    transition: .3s;
+}
+.plans-btn a:hover{
+    color: #fff;
+    background-color: #e67e22;
+}
+
+form{
+    position: relative;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+}
+
+form .row{
+    margin: 15px;
+}
+
+form label{
+    display: inline-block;
+    width: 22%;;
+}
+
+form input[type="text"]{
+    padding: 10px;
+    width: 44%;
+    font-size: 18px;
+}
+
+form button{
+    position: relative;
+    background-color: #e67e22;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 200px;
+    font-size: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+/*** FOOTER ***/
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #333333;
+    color: #888888;
+    padding: 50px 0;
+}
+footer a{
+    color: #888888;
+    transition: .3s;
+}
+
+footer a:hover{
+    color: #fff;
+}
+footer i{
+    font-size: 26px;
+}
+
+footer li{
+    float: left;
+    margin-right:40px;
+}
+
+.social-link{
+    position: relative;
+    left: 30%;
+}
+.copyright{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 50px;
+    font-size: 14px;
+}
+
+/*** gotop ***/
+#gotop {
+    position:fixed !important;
+    z-index:90;
+    right:30px;
+    display: none;
+    bottom:31px;
+    width:50px;
+    height:50px;
+    color:#fff;
+    background:#e67e22;
+    line-height:50px;
+    border-radius:50%;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
